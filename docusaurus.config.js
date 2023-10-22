@@ -88,10 +88,15 @@ const config = {
             label: 'Core Docs',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'tealscript',
-            position: 'left',
-            label: 'TEALScript',
+            type: 'dropdown',
+            label: 'Algokit Libraries',
+            items: [
+              {
+                type: 'docSidebar',
+                sidebarId: 'algokit-utils-ts',
+                label: 'TypeScript Utils',
+              },
+            ]
           },
           {
             type: 'dropdown',
@@ -109,7 +114,12 @@ const config = {
               },
             ]
           },
-
+          {
+            type: 'docSidebar',
+            sidebarId: 'tealscript',
+            position: 'left',
+            label: 'TEALScript',
+          },
           {
             href: 'https://github.com/algorand-devrel/tealscript',
             label: 'GitHub',

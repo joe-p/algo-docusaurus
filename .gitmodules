@@ -14,3 +14,6 @@
 	path = submodules/docs
 	url = https://github.com/algorand/docs
 	branch = master
+[submodule "submodules/algokit-utils-ts"]
+	path = submodules/algokit-utils-ts
+	url = https://github.com/algorandfoundation/algokit-utils-ts

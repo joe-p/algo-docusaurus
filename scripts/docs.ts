@@ -1,12 +1,7 @@
 import { globSync } from "glob";
 import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import path from "path";
-
-function toTitleCase(str) {
-  return str.replace(/\w\S*/g, function (txt) {
-    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-  });
-}
+import { toTitleCase } from "./common";
 
 const mdFiles = globSync("submodules/docs/docs/**/*.md");
 
@@ -104,6 +99,5 @@ mdFiles.forEach((file) => {
 const dirs = globSync("docs/core/**/*/");
 dirs.forEach((dir) => {
   const title = toTitleCase(path.basename(dir).replace(/-/g, " "));
-  console.log(dir, title);
   writeFileSync(path.join(dir, "_category_.yml"), `label: "${title}"`);
 });
