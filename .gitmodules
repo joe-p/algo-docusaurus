@@ -1,0 +1,4 @@
+[submodule "submodules/tealscript"]
+	path = submodules/tealscript
+	url = https://github.com/algorand-devrel/tealscript
+	branch = docs/docusaurus
