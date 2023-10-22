@@ -13,9 +13,9 @@ const config = {
       // Plugin / TypeDoc options
       {
         tsconfig: 'submodules/tealscript/tsconfig.json',
-        // entryPoints: ['../types/global.d.ts', '../src/lib/index.ts'],
         excludeInternal: true,
         plugin: ["typedoc-plugin-merge-modules"],
+        out: 'tealscript/api'
       },
     ],
   ],
@@ -66,16 +66,13 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'TEALScript',
+        title: 'Algorand',
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'tealscript',
             position: 'left',
-            label: 'Documentation',
-          },
-          {
-            to: 'docs/api/modules/types_global', position: 'left', label: 'API'
+            label: 'TEALScript',
           },
           {
             href: 'https://github.com/algorand-devrel/tealscript',
