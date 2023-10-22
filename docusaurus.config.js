@@ -12,10 +12,23 @@ const config = {
 
       // Plugin / TypeDoc options
       {
+        id: 'tealscript',
         tsconfig: 'submodules/tealscript/tsconfig.json',
         excludeInternal: true,
         plugin: ["typedoc-plugin-merge-modules"],
         out: 'tealscript/api'
+      },
+    ],
+    [
+      'docusaurus-plugin-typedoc',
+
+      // Plugin / TypeDoc options
+      {
+        tsconfig: 'submodules/js-algorand-sdk/tsconfig.json',
+        excludeExternals: true,
+        entryPoints: ["submodules/js-algorand-sdk/src/main.ts"],
+        entryPointStrategy: "expand",
+        out: "js-algorand-sdk"
       },
     ],
   ],
@@ -75,11 +88,22 @@ const config = {
             label: 'TEALScript',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'py-algorand-sdk',
-            position: 'left',
-            label: 'Python SDK',
+            type: 'dropdown',
+            label: 'SDKs',
+            items: [
+              {
+                type: 'docSidebar',
+                sidebarId: 'js-algorand-sdk',
+                label: 'JavaScript SDK',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'py-algorand-sdk',
+                label: 'Python SDK',
+              },
+            ]
           },
+
           {
             href: 'https://github.com/algorand-devrel/tealscript',
             label: 'GitHub',

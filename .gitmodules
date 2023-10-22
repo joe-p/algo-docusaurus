@@ -6,3 +6,7 @@
 	path = submodules/py-algorand-sdk
 	url = https://github.com/joe-p/py-algorand-sdk
 	branch = docs/markdown
+[submodule "js-algorand-sdk"]
+	path = submodules/js-algorand-sdk
+	url = https://github.com/joe-p/js-algorand-sdk
+	branch = doc_fixes
