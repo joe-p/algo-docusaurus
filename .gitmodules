@@ -2,3 +2,7 @@
 	path = submodules/tealscript
 	url = https://github.com/algorand-devrel/tealscript
 	branch = docs/docusaurus
+[submodule "py-algorand-sdk"]
+	path = submodules/py-algorand-sdk
+	url = https://github.com/joe-p/py-algorand-sdk
+	branch = docs/markdown

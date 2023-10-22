@@ -75,6 +75,12 @@ const config = {
             label: 'TEALScript',
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'py-algorand-sdk',
+            position: 'left',
+            label: 'Python SDK',
+          },
+          {
             href: 'https://github.com/algorand-devrel/tealscript',
             label: 'GitHub',
             position: 'right',
