@@ -89,8 +89,13 @@ const config = {
           },
           {
             type: 'dropdown',
-            label: 'Algokit Libraries',
+            label: 'Algokit',
             items: [
+              {
+                type: 'docSidebar',
+                sidebarId: 'algokit-cli',
+                label: 'Algokit CLI',
+              },
               {
                 type: 'docSidebar',
                 sidebarId: 'algokit-utils-ts',

@@ -17,3 +17,6 @@
 [submodule "submodules/algokit-utils-ts"]
 	path = submodules/algokit-utils-ts
 	url = https://github.com/algorandfoundation/algokit-utils-ts
+[submodule "submodules/algokit-cli"]
+	path = submodules/algokit-cli
+	url = https://github.com/algorandfoundation/algokit-cli
