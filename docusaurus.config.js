@@ -105,6 +105,17 @@ const config = {
           },
           {
             type: 'dropdown',
+            label: 'Smart Contracts',
+            items: [
+              {
+                type: 'docSidebar',
+                sidebarId: 'tealscript',
+                label: 'TEALScript',
+              },
+            ]
+          },
+          {
+            type: 'dropdown',
             label: 'SDKs',
             items: [
               {
@@ -118,12 +129,6 @@ const config = {
                 label: 'Python SDK',
               },
             ]
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'tealscript',
-            position: 'left',
-            label: 'TEALScript',
           },
           {
             href: 'https://github.com/algorand-devrel/tealscript',
