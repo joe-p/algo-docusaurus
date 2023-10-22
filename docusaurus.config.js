@@ -83,6 +83,12 @@ const config = {
         items: [
           {
             type: 'docSidebar',
+            sidebarId: 'core',
+            position: 'left',
+            label: 'Core Docs',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'tealscript',
             position: 'left',
             label: 'TEALScript',

@@ -10,3 +10,7 @@
 	path = submodules/js-algorand-sdk
 	url = https://github.com/joe-p/js-algorand-sdk
 	branch = doc_fixes
+[submodule "submodules/docs"]
+	path = submodules/docs
+	url = https://github.com/algorand/docs
+	branch = master
